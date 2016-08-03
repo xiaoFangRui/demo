@@ -1,0 +1,72 @@
+<div ng-controller="purse">
+
+    <div class="indexProperty clearfix">
+        <div class="indexPropertyLeft">
+            <div class="indexPropertyLeftTx">
+                <img src="img/index_toux.png"/>
+            </div>
+            <div class="indexPropertyLeftText">
+                <p>
+                    Hi<a href="javascript:;">{{username}}</a>
+                </p>
+                <p>欢迎进入天融钱包</p>
+            </div>
+        </div>
+        <ul class="indexPropertyRight">
+            <li>我的总资产</li>
+            <li>
+                <p>￥<span class="eyeBlock">{{money}}</span></p>
+            </li>
+        </ul>
+        <ul class="indexPropertyRight noBorder">
+            <li>
+                <p>可用余额：
+                ￥<span class="eyeBlock eyeBlock1">{{symoney}}</span></p>
+            </li>
+            <li>
+                <p>冻结金额：
+                ￥<span class="eyeBlock eyeBlock1">{{djmoney}}</span></p>
+            </li>
+        </ul>
+        <div class="eye">
+            <a ng-click="eyeBtn()" class="eyeBtn"></a>
+        </div>
+    </div>
+
+    <div class="indexBottom">
+        <div class="indexBottomTop">
+            <p>近期交易记录</p>
+            <a href="#select" >查看更多</a>
+        </div>
+        <div class="indexBottomBottom">
+            <div class="listTitle">
+                <ul class="clearfix">
+                    <li class="time">交易时间</li>
+                    <li class="name">名称</li>
+                    <li class="orderNum">订单号</li>
+                    <li class="moneyNum">交易金额</li>
+                    <li class="status">状态</li>
+                </ul>
+            </div>
+            <div class="dealBottomBottom2">
+                <div class="listTitle">
+                    <ul ng-repeat="jilu in jilus" class="clearfix">
+                        <li>{{jilu.time}}</li>
+                        <li>{{jilu.name}}</li>
+                        <li>{{jilu.ddnum}}</li>
+                        <li>{{jilu.moremoney}}</li>
+                        <li>{{jilu.status}}</li>
+                    </ul>
+                </div>
+                <div class="noRecord">
+                    <p>暂无记录</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
