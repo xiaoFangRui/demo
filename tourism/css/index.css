@@ -1,0 +1,1319 @@
+
+.inav{
+    width:100%;
+    height:420px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav{
+    width:100%;
+    height:55px;
+    background-color: rgba(250,250,250,0.5);
+    position: absolute;
+    top:0;
+    z-index: 10;
+}
+.navInfo{
+    width:1000px;
+    margin:0 auto;
+}
+.logo{
+    display: inline-block;
+    width:166px;
+    float:left;
+}
+.inul{
+    float:right;
+    line-height: 55px;
+}
+.inul li{
+    float:left;
+    padding:0 10px;
+    font-size: 16px;
+    margin:0 20px;
+    border-top:3px solid transparent;
+    position: relative;
+}
+.inul li.on{
+    border-top:3px solid #d22539;
+}
+.inul li.on a{
+    color:#cd2f45;
+}
+.hotNav i{
+    position: absolute;
+    right:-4px;
+    top:2px;
+    background-color: #e32839;
+    color:#fff;
+    font-size: 12px;
+    line-height:15px;
+    padding:1px 3px;
+}
+.hotNav i::after{
+    content: "";
+    border-top: 4px solid #e32839;
+    border-left:4px solid #e32839;
+    border-right:4px solid transparent;
+    border-bottom:4px solid transparent;
+    position: absolute;
+    bottom:-4px;
+    left:0;
+
+}
+
+/*   轮播图*/
+.ibanner{
+    height:420px;
+    width:100%;
+    z-index: 9;
+}
+.iimg a{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    transition:0.5s;
+}
+.iimg img{
+    height:420px;
+}
+.inum{
+    position: absolute;
+    bottom:40px;
+    left:50%;
+    margin-left:-80px;
+}
+.inum li{
+    float:left;
+    height:4px;
+    width:40px;
+    background-color: rgba(0,0,0,0.5);
+    margin:0 3px;
+}
+.inum li.on{
+    background-color: #d6364a;
+}
+.ileft,.iright{
+     display: none;
+     position:absolute;
+     top:180px;
+     font-size: 25px;
+     color:#fff;
+     background-color: rgba(0,0,0,0.5);
+     padding:5px 10px;
+}
+.ileft{
+     left:5px;
+}
+.iright{
+     right:5px;
+}
+
+/*     热门搜索    */
+.container{
+     width:1000px;
+     margin:0 auto;
+}
+.isearch{
+     width:500px;
+     margin:0 auto;
+}
+.isinput{
+     width:100%;
+     height:50px;
+     position:relative;
+     top:-25px;
+     background-color: #fff;
+     border-radius: 28px;
+     line-height: 50px;
+     font-size: 18px;
+}
+.isinput  input{
+     width:400px;
+     color:#ccc;
+     line-height: 30px;
+     margin-left:25px;
+     border:none;
+     outline:medium;
+}
+.isinput a{
+     position: absolute;
+     right:10px;
+     top:5px;
+     color:#fff;
+    width:80px;
+     height:40px;
+     line-height: 40px;
+     text-align: center;
+     border-radius: 20px;
+     background-color: #d22539;
+}
+.istip{
+     width:230px;
+     margin:15px auto;
+     line-height: 20px;
+     text-align: center;
+}
+.istip a{
+     color:#8c8c8c;
+     margin:0 6px;
+}
+.istip a.on{
+     color:#d22539;
+}
+/*
+    特别推荐
+*/
+.recommend{
+     width:1000px;
+     margin: 30px auto;
+     text-align: center;
+}
+.recommend h3{
+     font-size: 36px;
+     color:#666;
+}
+.reco{
+     width:100%;
+     margin:40px auto 60px;
+}
+.recoImg{
+     float:left;
+     width:660px;
+     height:400px;
+}
+.recoDesc{
+     float:left;
+     width:340px;
+     height:400px;
+     box-sizing: border-box;
+     background-color: #fff;
+     padding-top:120px;
+     color:#666;
+}
+.recoDesc h4{
+     font-size: 24px;
+     line-height: 50px;
+}
+.recoDesc em{
+     font-size: 30px;
+}
+.recoDesc a{
+    display: block;
+    color:#fff;
+    background-color: #d22539;
+    width:180px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    margin:40px auto;
+}
+.discoImg{
+    float:left;
+    width:320px;
+    height:360px;
+    margin-left:20px;
+    position: relative;
+}
+.discoImg:first-child{
+    margin-left: 0;
+}
+.discoImg div{
+    height:50px;
+    width:100%;
+    line-height: 25px;
+    padding:10px 0;
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    font-size: 16px;
+}
+.seaT .seaImg{
+    width:660px;
+}
+/*
+    之旅结束
+*/
+
+.iprivate{
+    width:100%;
+    height:400px;
+    background:url("../image/ibg-cust.png") no-repeat center;
+    background-size:auto 400px;
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.iprivate div{
+    width:500px;
+    height:200px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    margin:60px auto;
+    color:#fff;
+    padding:40px 0;
+}
+.iprivate div h4{
+    font-size: 36px;
+}
+.iprivate div p{
+    line-height: 50px;
+}
+.iprivate div a{
+    display: inline-block;
+    font-size: 18px;
+    color:#fff;
+    padding:5px 20px;
+    border:1px solid #fff;
+    border-radius: 5px;
+    margin-top:10px;
+}
+/*      量身定制，专属玩法       结束*/
+/*
+    签证
+*/
+.ivisaCountry{
+
+}
+.ivisaCountry li{
+    display: inline-block;
+    padding: 8px 15px;
+    margin:20px 30px;
+    font-size: 16px;
+}
+.ivisaCountry li.on{
+    background-color: #cd2f45;
+    border-radius: 5px;
+}
+.ivisaCountry li.on a{
+    color:#fff;
+}
+.ivisaImg li{
+    float:left;
+    width:320px;
+    height:320px;
+    margin-left:20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.ivisaImg li:first-child{
+    width:660px;
+    margin-left: 0;
+}
+.ivisaImg li:nth-child(3){
+    margin-left: 0;
+}
+.ivisaImg li div{
+    height:60px;
+    width:100%;
+    padding:10px 0;
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+}
+.ivisaImg li div p:first-child{
+    font-size: 16px;
+}
+/*      签证      结束*/
+
+/*
+    攻略游记    开始
+*/
+.istraImg > div{
+    float:left;
+    width:490px;
+    height:420px;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+.istraImg > div:nth-child(2){
+    margin-left:20px;
+}
+.istraDesc{
+    height:120px;
+    width:100%;
+    text-align: center;
+    background-color: #fff;
+}
+.istraDesc img{
+    width:80px;
+    height:80px;
+    position: relative;
+    top:-40px;
+    border-radius: 100%;
+}
+.istraDesc p{
+    font-size: 16px;
+    color:#666;
+    margin-top:-20px;
+}
+.istraDesc span{
+    font-size: 12px;
+    color:#999;
+    line-height: 30px;
+}
+/*      攻略、游记           结束*/
+/*
+    底部footer
+*/
+footer{
+    width:100%;
+    height:220px;
+    background-color: #4d4d4d;
+    color:#fff;
+    font-size: 12px;
+    overflow: hidden;
+    position: absolute;
+    /*margin-top:100px;*/
+}
+footer a{
+    color:#fff;
+}
+.icopy{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    background-color: #666;
+    text-align: center;
+    font-size: 12px;
+}
+.ifooter{
+    width:1000px;
+    margin:40px auto;
+}
+
+.iewm{
+    float:left;
+}
+.iewm a{
+    display: inline-block;
+    width:88px;
+    line-height: 20px;
+    text-align: center;
+    margin-right:20px;
+}
+.iabout{
+    float:left;
+    margin-left:35px;
+    margin-top:10px;
+}
+.iabout ul{
+    margin-top:20px;
+}
+.iabout ul li{
+    display: inline-block;
+    margin-right:30px;
+}
+.iabout ul li a{
+    font-size: 16px;
+}
+footer dl dd{
+    line-height: 20px;
+}
+
+/*
+    首页结束
+*/
+
+/*
+    产品列表页面
+*/
+.content{
+    width:1000px;
+    margin:75px auto;
+    padding-top:20px;
+}
+.proSelector{
+    width:100%;
+    height:120px;
+    padding:20px 0;
+    background-color: #fff;
+    font-size: 12px;
+    font-family:  "SimSun";
+}
+.proSelector a{
+    color:#1a1a1a;
+    padding:3px 8px;
+}
+.proSelector dl{
+    margin-left:20px;
+    line-height: 30px;
+}
+.proSelector dt{
+    display: inline-block;
+    color:#666;
+    width:60px;
+    text-align: center;
+    margin-right:5px;
+}
+.proSelector dd{
+    display: inline-block;
+    margin-right:20px;
+}
+.proSelector dd.on a{
+    color:#fff;
+    background-color: #cd2f45;
+}
+.proSort{
+    width:100%;
+    line-height: 50px;
+    background-color: #fff;
+    margin:10px auto;
+    font-family:  " SimSun ";
+}
+.proSort a{
+    font-size: 12px;
+    color:#1a1a1a;
+    margin:0 20px;
+}
+.proSort a.on{
+    color:#cd2f45;
+}
+
+/*           产品列表： 搜索排序结束  */
+/*
+            产品列表：产品信息
+*/
+.proList > li{
+    width:100%;
+    height:400px;
+    margin:10px auto;
+}
+.proImg{
+    float:left;
+    width:660px;
+}
+.proDesc{
+    float:left;
+    height:400px;
+    width:340px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding:20px;
+    position: relative;
+}
+.proDesc h3{
+    font-size: 22px;
+    color:#cd2f45;
+    margin-bottom:10px;
+}
+.proDesc ul li{
+    background: url("../image/star.png") no-repeat left 4px;
+    padding-left: 28px;
+    color:#666;
+    line-height: 25px;
+}
+.proDesc p{
+    font-size: 14px;
+    padding:20px 0;
+    border-bottom: 1px dashed #999;
+}
+.proDesc  div{
+    padding-top:30px;
+    padding-left: 30px;
+}
+.proDesc  div del{
+    color:#666;
+    display: block;
+}
+.proDesc  div em{
+    display: block;
+    color:#ff7e00;
+    font-size: 30px;
+}
+.proDesc  div a{
+    color:#fff;
+    background-color: #cd2f45;
+    font-size: 18px;
+    padding:10px 25px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 45px;
+    right:20px;
+}
+/*             产品列表：产品信息   结束   */
+
+/*
+    产品列表：页码部分
+*/
+.proPage{
+    width:100%;
+    height:60px;
+    line-height: 60px;
+    background-color: #fff;
+    font-family:  " SimSun ";
+    text-align: center;
+    margin:20px auto;
+}
+.proPage ul{
+    display: inline-block;
+}
+.proPage ul li{
+   display: inline-block;
+    margin:0 4px;
+}
+.proPage ul li a{
+    display: inline-block;
+    font-size: 16px;
+    font-family: "黑体";
+    width:24px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    border:1px solid #d9d9d9;
+    color:#4c4c4c;
+}
+.proPage ul li.on a{
+    color:#fff;
+    background-color: #cd2f45;
+    border:1px solid #cd2f45;
+}
+.proPage > a{
+    display: inline-block;
+    width:50px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    color:#4c4c4c;
+    background-color: #e6e6e6;
+    border:1px solid #d9d9d9;
+    margin:0 5px;
+}
+.proPage  span input{
+    width:50px;
+    height:20px;
+    margin:0 5px;
+}
+/*             产品列表     结束         */
+
+/*
+            产品详情页面
+*/
+.pdetailnav{
+    width:100%;
+    height:30px;
+}
+.pdetailnav a{
+    color:#666;
+}
+.pdetailnav span{
+    color:#666;
+    margin:0 12px;
+}
+.pdetailBanner{
+    height:410px;
+    width:100%;
+    background-color: #fff;
+    box-sizing:border-box;
+    padding:20px;
+    margin-bottom:15px;
+}
+.pdetailBanner .pdetailImg ,.pdetailBanner .pdetailDesc{
+    float:left;
+    height:100%;
+    position: relative;
+}
+.pdetailImg .bigImg{
+    width:500px;
+    height:300px;
+}
+.pdetailImg ul li{
+    display: inline-block;
+    width:100px;
+    height:60px;
+    margin-right:10px;
+}
+.pdetailImg ul li img{
+    width:100px;
+    height:60px;
+}
+.pdetailBanner .bigImg{
+    position: relative;
+    margin-bottom: 10px;
+}
+.pdetailBanner .bigImg .shadow{
+    position: absolute;
+    top:0;
+    left:0;
+    width:50px;
+    height:30px;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.pdetailBanner .mouseImg{
+    position: absolute;
+    left:100%;
+    top:0;
+    width:500px;
+    height:300px;
+    display: none;
+    overflow: hidden;
+    z-index: 2;
+}
+.pdetailImg ul li.on{
+    border : 3px solid #d24357;
+}
+.pdetailDesc h4{
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.pdetailDesc  ul{
+    margin: 10px 20px;
+    height:120px;
+}
+.pdetailDesc  ul li{
+    line-height: 30px;
+    color:#4c4c4c;
+    padding-left:5px;
+}
+.pdetailDesc  ul li strong{
+    display: inline-block;
+    width:70px;
+    font-weight: bold;
+}
+.pdetailDesc  .pdetailSelector{
+    width:450px;
+    height:200px;
+    margin-left:10px;
+    background-color: #fdf8f9;
+}
+.pdetailDesc  .pdetailSelector p{
+    line-height: 40px;
+    color:#808080;
+}
+.pdetailSelector p span{
+    width:60px;
+    display: inline-block;
+    margin:0 20px;
+}
+.pdetailPrice i{
+    color:#cd2f45;
+    font-size: 16px;
+}
+.pdetailPrice em{
+    font-size: 24px;
+    color:#cd2f45;
+}
+.pdetailCheck button{
+    width:28px;
+    height:28px;
+    text-align: center;
+    line-height: 28px;
+    border:1px solid #e6e6e6;
+    color:#4c4c4c;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.pdetailCheck i{
+    display: inline-block;
+    width:40px;
+    text-align: center;
+    line-height: 26px;
+    border-top:1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    color:#4c4c4c;
+    font-size: 20px;
+    margin:0 ;
+    vertical-align: middle;
+}
+.pdetailSelector a{
+    display: block;
+    width:160px;
+    line-height: 40px;
+    text-align: center;
+    margin:20px auto;
+    color:#fff;
+    background-color: #d24357;
+    border-radius: 3px;
+}
+/*      产品详情：banner部分结束*/
+
+/*      产品详情：信息展示区*/
+.pdetailInfo>ul li{
+    float:left;
+    width:98px;
+    height:38px;
+    line-height: 40px;
+    border:1px solid #e6e6e6;
+    text-align: center;
+    background-color: #fff;
+}
+.pdetailInfo>ul li a{
+    display: inline-block;
+    width:100%;
+    color:#4d4d4d;
+    font-size: 16px;
+}
+.pdetailInfo>ul li.on a{
+    border-top: 3px solid #cd2f45;
+    color:#4c4c4c;
+    font-weight: bold;
+    position: relative;
+}
+.pdetailInfo>ul li.on a::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    z-index: 10;
+
+}
+.pdetailInfoRecom{
+    width:100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding:0 20px;
+    border:1px solid #e6e6e6
+}
+.pDetail{
+    position: relative;
+    border-top: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+.pdetailSpecial{
+    border-top:none;
+}
+.pDetail .pdIcon{
+    width:80px;
+    height:60px;
+    text-align: center;
+    background-color: #d24357;
+    border-radius: 100%;
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding-top:20px;
+}
+.pDetail .pdRecommend{
+    margin: 30px 0 50px 130px;
+
+}
+.pDetail .pdRecommend ul li{
+    line-height: 25px;
+    color:#4c4c4c;
+    letter-spacing: 2px;
+}
+.pdRecommend .RecomTitle{
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 20px;
+}
+.pdRecommend .RecomTitle h1{
+    position: absolute;
+    top:-7px;
+    left:0;
+    color:#d24357;
+    font-size: 58px;
+    font-family: Arial;
+}
+.pdRecommend div h4{
+    margin-left:90px;
+    display: block;
+}
+.pdRecommend div h4 span{
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+}
+.pdRecommend > p{
+    color:#666;
+    line-height: 25px;
+    margin:20px 0;
+}
+.pdRecommend .RecomEat{
+    margin:30px 0 40px ;
+}
+.pdRecommend .RecomImg{
+    margin:20px 0;
+}
+.pdRecommend .RecomImg div{
+    display: inline-block;
+    margin-right:20px;
+}
+.pdRecommend .RecomImg div label{
+    font-size: 12px;
+    color:#666;
+    display: block;
+}
+.pdRecommend dl dt{
+    font-size: 16px;
+    font-weight: bold;
+    margin:30px 0 20px 0;
+}
+.pdRecommend dl dd{
+    color:#666;
+    line-height: 27px;
+}
+/*  产品详情页面  结束  */
+/*
+    攻略页面
+*/
+.strateBanner{
+    width:100%;
+    height:400px;
+    background:url("../image/strateryBanner.png") no-repeat center;
+    background-size: auto 400px;
+}
+.strategyDestination{
+    margin:70px auto 0;
+}
+li.strategyItem{
+    float:left;
+    width: 490px;
+    height: 420px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+li.marginRight{
+    margin-right:20px;
+}
+/*      攻略页面    结束*/
+
+/*
+    联系我们页面
+*/
+.contactNav{
+    float: left;
+}
+.contactNav li{
+    width:180px;
+    padding-left:20px;
+    line-height: 50px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+}
+.contactNav li a{
+    color:#323232;
+    font-weight: bold;
+}
+.contactNav li.on a{
+    color:#d22539;
+    position: relative;
+}
+.contactNav li.on a::after{
+    content: "";
+    width:3px;
+    height:100%;
+    position: absolute;
+    left:-20px;
+    top:0;
+    background-color: #d22539;
+}
+.contactInfo{
+    float:right;
+    width:780px;
+    min-height:580px;
+    background-color: #fff;
+}
+.contactInfo > p{
+    line-height: 50px;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: bold;
+    color:#323232;
+    padding-left: 20px;
+}
+.contactInfo > div{
+    padding:20px 20px ;
+    position: relative;
+}
+div.contactAboutUs dt:not(:first-child){
+    font-weight: bold;
+    color:#4c4c4c;
+    margin-top: 25px;
+}
+ div.contactAboutUs dd{
+    line-height: 25px;
+    color:#666666;
+}
+div.contactLinkUs .contactMap{
+     width:100%;
+     height:300px;
+     position: relative;
+ }
+.contactMapTel{
+    padding:20px;
+    height:160px;
+    width:240px;
+    color:#fff;
+    background-color: rgba(205,47,69,0.8);
+    position: absolute;
+    left:35px;
+    bottom:20px;
+    z-index: 10;
+}
+.contactMap .contactMapTel p{
+    line-height: 30px;
+}
+.contactMap .contactMapTel li{
+    line-height:20px;
+    font-size: 12px;
+}
+div.contactSuggest textarea{
+    width:100%;
+    height:200px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    border:1px solid #e6e6e6;
+    color:#999;
+    font-size: 12px;
+    padding:10px;
+}
+div.contactSuggest button{
+    width:130px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    color:#fff;
+    background-color: #cd2f45;
+    border:none;
+    border-radius: 3px;
+    position: absolute;
+    top:240px;
+    right:20px;
+}
+/*  联系我们页面  结束*/
+/*
+    量身定制    页面
+*/
+.customized{
+    width:100%;
+    height:750px;
+    background:url("../image/customized.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.customizedInfo{
+    width:620px;
+    height:560px;
+    padding:0 20px;
+    margin:100px auto;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    color:#fff;
+}
+.customizedInfo h3{
+    line-height: 60px;
+    font-size: 24px;
+    border-bottom: 1px solid #fff;
+}
+.customizedInfo div{
+    line-height: 60px;
+    font-size: 16px;
+}
+.customizedInfo div label{
+    display: inline-block;
+    width:120px;
+    text-align: right;
+    margin-right: 20px;
+}
+.customizedInfo div > input,.customizedInfo div > select{
+    width:230px;
+    height:40px;
+    background-color: #fff;
+    border-radius: 5px;
+    line-height: 40px;
+    border:none;
+}
+.customizedInfo div >span{
+    display: inline-block;
+    width:190px;
+    line-height: 40px;
+    margin-right:20px;
+    position: relative;
+}
+.customizedInfo div >span i{
+    position: absolute;
+    left:10px;
+    color:#b2b2b2;
+}
+.customizedInfo div >span input{
+    width:160px;
+    background-color: #fff;
+    border-radius: 5px;
+    line-height: 40px;
+    border:none;
+    padding-left: 30px;
+
+}
+.customizedInfo div textarea{
+    width:400px;
+    height:100px;
+    border-radius: 5px;
+    border:none;
+    vertical-align: top;
+    margin:10px 0;
+}
+.customizedInfo div a{
+    display: block;
+    line-height:40px;
+    width:180px;
+    text-align: center;
+    margin:10px auto 10px 150px;
+    background-color: #cd2f45;
+    color:#fff;
+    border-radius: 5px;
+
+}
+/*   量身定制   页面  结束   */
+/*
+    预定页面
+*/
+.orderTop{
+    width:100%;
+    height:70px;
+    color:#cd2f45;
+    position: relative;
+}
+.orderTopLeft{
+    height:5px;
+    width:100%;
+    background-color: #cd2f45;
+    position: relative;
+}
+.orderTopLeft span{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    padding:8px;
+    border-radius: 100%;
+    background-color: #e6e6e6;
+    border:1px solid #cd2f45;
+    z-index: 10;
+    position: relative;
+    top:-15px;
+}
+.orderTopLeft span i{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    border-radius: 100%;
+    background-color: #cd2f45;
+}
+.orderTopLeft span.orderTopLeft1{
+    left:200px;
+}
+.orderTopLeft span.orderTopLeft2{
+    left:450px;
+}
+.orderTopLeft span.orderTopLeft3{
+    left:700px;
+}
+.orderTopLeft span.on{
+    border:1px solid #e6e6e6;
+}
+.orderTopLeft span.on i{
+    background-color: #fff;
+}
+.orderTopLeft span.on:after{
+    content: "";
+    height:5px;
+    width:192px;
+    background-color: #e6e6e6;
+    position: absolute;
+    bottom:13px;
+    left:32px;
+}
+.orderTopLeft span.on i::before{
+    content: "";
+    height:5px;
+    width:125px;
+    background-color: #e6e6e6;
+    position: absolute;
+    bottom:13px;
+    left:-125px;
+
+}
+.orderBottom{
+    width:100%;
+    padding-top:20px;
+}
+.orderBottom p{
+    display: inline-block;
+    width:245px;
+    text-align: right;
+    margin-right:40px;
+}
+.orderBottom p.on{
+    color:#808080;
+}
+
+/*  订单页面信息*/
+
+.orderInfo h4{
+    font-weight: bold;
+    line-height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+.orderInfoRight{
+    float:right;
+    width:238px;
+    height:218px;
+    border:1px solid #e5a6af;
+    padding:10px;
+    background-color: #fdf8f9;
+}
+.orderInfoLeft{
+    float:left;
+    width:710px;
+}
+.orderInfoLeft > div{
+    background-color: #fff;
+    padding:10px;
+    width:690px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.orderInfoLeftCircuit li{
+    line-height: 40px;
+}
+.orderInfoLeftCircuit li span:first-child{
+    display: inline-block;
+    width:80px;
+    text-align: right;
+    margin-right:20px;
+}
+.orderInfoLeftCircuit li span.orderInfoCircuitTitle{
+    color:#cd2f45;
+}
+.orderInfoLeftCircuit li input[type="date"]{
+    width:140px;
+}
+.orderInfoLeftCircuit li button,.orderInfoLeftCircuit li button{
+    line-height: 28px;
+    width:28px;
+    text-align: center;
+    border:1px solid #e6e6e6;
+    background-color: #f5f5f5;
+}
+.orderInfoLeftCircuit li input[type="text"]{
+    width:30px;
+    line-height: 28px;
+    text-align: center;
+    border:1px solid #e6e6e6;
+}
+.orderInfoLeftCircuit li span.orderInfoCircuitTrip,.orderInfoLeftCircuit li span.orderInfoCircuitHourse{
+    margin-left:10px;
+}
+
+.orderInfoLeftLinkman div{
+    line-height: 45px;
+}
+.orderInfoLeftLinkman div label{
+    display: inline-block;
+    width:90px;
+    text-align: right;
+    margin-right: 10px;
+    color:#808080;
+}
+.orderInfoLeftLinkman div label i{
+    color:#cd2f45;
+}
+.orderInfoLeftLinkman div input{
+    width:240px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.orderInfoLeftLinkman div textarea{
+    width:360px;
+    height:60px;
+    vertical-align: top;
+    color:#ccc;
+    margin:10px 0;
+    padding:5px;
+}
+.orderInfoLeftTotal p{
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.orderInfoLeftTotal p span{
+    color:#cd2f45;
+}
+.orderInfoLeftTotal a{
+    position: absolute;
+    right:0;
+    top:0;
+    bottom: 0;
+    width:130px;
+    text-align: center;
+    line-height: 70px;
+    background-color: #cd2f45;
+    color:#fff;
+    font-size: 20px;
+}
+.orderInfoRightInfo{
+    margin:20px 0;
+}
+.orderInfoRight p{
+    line-height: 30px;
+    color:#4c4c4c;
+    padding:0 10px;
+}
+.orderInfoRight p span:last-child{
+    float:right;
+
+}
+.orderInfoRightTotal{
+    line-height: 60px;
+    color:#808080;
+    border-top: 1px solid #e6e6e6;
+}
+.orderInfoRightTotal span:last-child{
+    float:right;
+    color:#cd2f45;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*  预定页面结束  */
+/*
+    预定成功页面
+*/
+.orderSuccess{
+    width:500px;
+    height:300px;
+    text-align: center;
+    margin:120px auto ;
+    background-color: #fff;
+}
+.orderSuccess img{
+    margin:45px auto 10px;
+}
+.orderSuccess h3{
+    line-height: 45px;
+    color:#cd2f45;
+    font-size: 24px;
+}
+.orderSuccess p{
+    font-size: 16px;
+    line-height: 35px;
+}
+.orderSuccess div{
+    margin-top:25px;
+}
+.orderSuccess .orderSuccessBack {
+    color:#cd2f45;
+    margin-right:10px;
+}
+.orderSuccess .orderSuccessAuto{
+    color:#999;
+    text-decoration: underline;
+    padding:0 5px;
+}
+

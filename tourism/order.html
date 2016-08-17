@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>新世界旅游</title>
+    <link rel="stylesheet" href="css/yahoo.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-2.2.3.js"></script>
+    <script src="js/order.js"></script>
+</head>
+<body>
+
+<div class="nav">
+    <div class="navInfo">
+        <a class="logo" href="#"><img src="image/logo.png"/></a>
+        <ul class="inul">
+            <li  class="on"><a href="index.html">首页</a></li>
+            <li><a href="product.html">产品</a></li>
+            <li><a href="strategy.html">攻略</a></li>
+            <li class="hotNav">
+                <a href="customized.html">量身定制</a>
+                <i>hot</i>
+            </li>
+            <li ><a href="contactUs.html">练习我们</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+    <div class="orderTop">
+        <div class="orderTopLeft">
+            <span class="orderTopLeft1"><i></i></span>
+            <span class="orderTopLeft2"><i></i></span>
+            <span class="orderTopLeft3 on"><i></i></span>
+        </div>
+        <div class="orderBottom">
+            <p>选择产品</p>
+            <p>订单填写</p>
+            <p class="on">预定成功</p>
+        </div>
+    </div>
+    <div class="orderInfo clearfix">
+        <div class="orderInfoLeft">
+            <div class="orderInfoLeftCircuit">
+                <h4>线路信息</h4>
+                <ul>
+                    <li>
+                        <span>线路名称</span>
+                        <span class="orderInfoCircuitTitle">【最细沙滩】北京直飞长滩岛6天自由行</span>
+                    </li>
+                    <li>
+                        <span>出游日期</span>
+                        <input type="date"/>
+                    </li>
+                    <li>
+                        <span>出行人数</span>
+                        <button class="jianFa">-</button><input type="text" value="1"/><button class="jiaFa">+</button>
+                        <span class="orderInfoCircuitTrip"> * ￥<i>2699</i> </span>
+                    </li>
+                    <li>
+                        <span>用房数量</span>
+                        <button class="jianFa">-</button><input type="text" value="1"/><button class="jiaFa">+</button>
+                        <span class="orderInfoCircuitHourse">房差￥   <i>3000</i>    </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="orderInfoLeftLinkman">
+                <h4>联系人</h4>
+                <div>
+                    <label for="username"><i>*</i> 姓名</label>
+                    <input type="text" id="username" />
+                </div>
+                <div>
+                    <label for="tellphone"><i>*</i> 联系电话</label>
+                    <input type="text" id="tellphone"/>
+                    <span>（用于接收确认信息）</span>
+                </div>
+                <div>
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" />
+                </div>
+                <div >
+                    <label for="tips">备注</label>
+                    <textarea id="tips">如果对订单有特殊要求，可以在这里留言</textarea>
+                </div>
+            </div>
+            <div class="orderInfoLeftTotal">
+                <p>总计：  <span>￥<i>5899</i></span></p>
+                <a href="orderSuccess.html">提交订单</a>
+            </div>
+        </div>
+
+        <div class="orderInfoRight">
+            <h4>订单信息</h4>
+            <div class="orderInfoRightInfo">
+                <p>
+                    <span>出行人数</span>
+                    <span class="orderInfoRightTrip"><i>1</i>*￥<span>2699</span></span>
+                </p>
+                <p>
+                    <span>用房数量</span>
+                    <span class="orderInfoRightNum">2</span>
+                </p>
+                <p>
+                    <span>单房差</span>
+                    <span class="orderInfoRightHourse">￥<i>999</i></span>
+                </p>
+            </div>
+            <div class="orderInfoRightTotal">
+                <span>总计</span>
+                <span>￥<i>6899</i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer >
+    <div class="ifooter clearfix">
+        <div class="iewm">
+            <a class="ewm-dyh" href="#">
+                <img src="image/ewm_dyh.png" />
+                订阅号二维码
+            </a>
+            <a class="ewm-fyh" href="#">
+                <img src="image/ewm_fwh.png" />
+                服务号二维码
+            </a>
+        </div>
+        <div class="iabout">
+            <p><a href="#">公司资质荣誉&nbsp; </a> <a href="#"> 首批北京市4A旅行社</a> </p>
+            <p><a href="#">第十三届首都旅游紫禁杯先进集体&nbsp; </a> <a href="#"> 第十四届首都旅游紫禁杯先进集体</a></p>
+            <ul>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">投诉意见</a></li>
+                <li><a href="#">合作单位</a></li>
+            </ul>
+        </div>
+        <dl class="iabout">
+            <dd>电话：51336808</dd>
+            <dd>邮编：100062    传真：51337666 </dd>
+            <dd>邮箱：info@newworldtours.cn</dd>
+            <dd>地址：北京市东城区广渠门内大街安化北里1号长保大厦13层 </dd>
+        </dl>
+    </div>
+    <div class="icopy">
+        <a href="#">新世界国旅网版权所有&nbsp; </a>  <a href="#">  &nbsp;京ICP备12346335号</a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+{
+  "code": ["美洲","欧洲","澳洲","地中海","亚洲","亲子","蜜月","购物","夕阳红"],
+  "num": [3,3,3,9,3,3,7,3,8],
+
+  "discovery": [
+    {
+      "img": "image/discovery1.png",
+      "desc1": "绅士之国",
+      "desc2": "豪华魅力英伦游"
+    },
+    {
+      "img": "image/discovery2.png",
+      "desc1": "沸腾南美",
+      "desc2": "巴西火热桑巴游"
+    },
+    {
+      "img": "image/discovery3.png",
+      "desc1": "伏尔加船歌",
+      "desc2": "俄罗斯红色记忆游"
+    }
+  ],
+  "driveTrip": [
+    {
+      "img": "image/drive1.png",
+      "desc1": "沸腾南美",
+      "desc2": "巴西火热桑巴游"
+    },
+    {
+      "img": "image/drive2.png",
+      "desc1": "沸腾南美",
+      "desc2": "巴西火热桑巴游"
+    },
+    {
+      "img": "image/drive3.png",
+      "desc1": "伏尔加船歌",
+      "desc2": "俄罗斯红色记忆游"
+    }
+  ],
+  "seaTrip": [
+    {
+      "img": "image/seaTrip1.png",
+      "desc1": "一路向北",
+      "desc2": "豪华游轮北欧梦幻游"
+    },
+    {
+      "img": "image/seaTrip2.png",
+      "desc1": "蓝色呼唤",
+      "desc2": "豪华游轮地中海恋歌游"
+    }
+  ],
+  "pilgrimage": [
+    {
+      "img": "image/pilgrimage1.png",
+      "desc1": "绅士之国",
+      "desc2": "豪华魅力英伦游"
+    },
+    {
+      "img": "image/pilgrimage2.png",
+      "desc1": "沸腾南美",
+      "desc2": "巴西火热桑巴游"
+    },
+    {
+      "img": "image/drive3.png",
+      "desc1": "伏尔加船歌",
+      "desc2": "俄罗斯红色记忆游"
+    }
+  ],
+  "istrate": [
+    {
+      "img": "image/istrateImg1.png",
+      "icon": "http://localhost/tourism/image/istrateIcon1.png",
+      "desc": "新西兰，来到这个地广人稀的国家，走进毛立坚民族",
+      "data": "2016年2月12日"
+    },
+    {
+      "img": "image/istrateImg2.png",
+      "icon": "image/istrateIcon2.png",
+      "desc": "新西兰，来到这个地广人稀的国家，走进毛立坚民族",
+      "data": "2016年2月12日"
+    }
+  ]
+}
